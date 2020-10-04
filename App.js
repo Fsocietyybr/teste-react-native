@@ -1,20 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+
+import { Main, Title } from './styles/global';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text> Time 2 Read</Text>
-      <Text> featured: the new york times api</Text>
-    </View>
+    <>
+      <Main>
+        <Title>T1M3 2 RE4D</Title>
+      </Main>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
