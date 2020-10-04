@@ -1,0 +1,12 @@
+{
+  "name": "timetworead",
+  "displayName": "timetworead",
+  "expo": {
+    "name": "timetworead",
+    "slug": "timetworead",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
