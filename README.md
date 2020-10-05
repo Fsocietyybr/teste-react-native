@@ -8,7 +8,7 @@ A api deve ser conectada através de alguma forma de servidor com request e resp
 
 Criar uma conta no domínio : developer.nytimes.com
 
-![nytimes](https://developer.nytimes.com/files/poweredby_nytimes_65a.png?v=1583354208350)
+[api-nyt](https://i.imgur.com/TR8cw2c.png)
 
 Registrar os conteúdos (no projeto: Top Stories)
 
