@@ -11,6 +11,9 @@ export default function App() {
     <>
       <Main>
         <Title>T1M3 2 RE4D</Title>
+        <Title>._Technology</Title>
+        <Title>Science</Title>
+
       </Main>
     </>
   );
