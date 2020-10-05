@@ -1,28 +1,33 @@
 import React, { useEffect, useState } from 'react';
 
-import { Main, Title } from './styles/global';
+import { Main, Title, Content, News } from './styles/global';
 
 import api from './src/services/api'
 
 export default function App() {
-  const [info, setInfo] = useState([]);
+  const [articles, setArticle] = useState([]);
 
   // Load dos dados da api
   useEffect(() => {
-    async function loadNews() {
+    async function loadArticles() {
       const response = await api.get('/arts.json');
-      console.log(response.data);
-      setInfo(response.data);
+
+      const { results: news } = response.data;
+
+      console.log(news);
+      setArticle(news);
     }
 
-    loadNews();
+    loadArticles();
   }, []);
 
   return (
     <>
       <Main>
-        <Title>T1M3 2 RE4D</Title>
-        <Title>._Technology</Title>
+        <Title>Technology</Title>
+        <Content>
+          {articles.map(article => <News key={article.url}>{article.title}</News> )}
+        </Content>
         <Title>Science</Title>
       </Main>
     </>
