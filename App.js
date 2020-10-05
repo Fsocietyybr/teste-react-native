@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Main, Title } from './styles/global';
 
+import api from './src/services/api'
+
 export default function App() {
+  const [info, setInfo] = useState([]);
+
   return (
     <>
       <Main>

@@ -9,4 +9,6 @@ export const Main = styled.View`
 
 export const Title = styled.Text`
   color: hotpink;
+  font-size: 42px;
+  font-weight: bold;
 `;

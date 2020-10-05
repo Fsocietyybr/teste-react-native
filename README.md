@@ -2,6 +2,16 @@
 
 A aplicação será um portal de notícias utilizando React Native para a exibição de notícias de dois temas que estão dentro da api do THE NEW YORK TIMES.
 
+## Sobre a API
+
+A api deve ser conectada através de alguma forma de servidor com request e response. Utilizando das chaves de api providenciadas pelo próprio grupo de desenvolvimento do New York Times e suas políticas.
+
+Criar uma conta no domínio : developer.nytimes.com
+
+![nytimes](https://developer.nytimes.com/files/poweredby_nytimes_65a.png?v=1583354208350)
+
+Registrar os conteúdos (no projeto: Top Stories)
+
 O projeto deverá ser publicado em um repositório público no github.
 
 * **Obrigatório:**:
