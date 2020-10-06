@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Component } from 'react';
 
-import { Draw , Title } from './styled-drawers';
+import { Draw, Title } from './styled-drawers';
 
 import api from '../../services/api';
 

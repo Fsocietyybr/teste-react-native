@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Main, Title } from '../../styles/global';
+import { Title } from '../../styles/global';
 
 const TabArt = () => {
   return (

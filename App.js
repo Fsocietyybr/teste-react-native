@@ -8,15 +8,20 @@ const Stack = createStackNavigator();
 
 /* import screens */
 import Dashboard from './src/screens/Dashboard';
+import Details from './src/screens/Details';
+
 import Art from './src/screens/drawers/art';
 import Science from './src/screens/drawers/science';
 import Technology from './src/screens/drawers/technology';
+
+
 
 export default class App extends Component {
   render() {
     createHomeStack = () =>
     <Stack.Navigator>
-      <Stack.Screen name="Swipe it up" component={Dashboard} />
+      <Stack.Screen name="Swipe" component={Dashboard} />
+      <Stack.Screen name="Details" component={Details} />
     </Stack.Navigator>
 
     return (
