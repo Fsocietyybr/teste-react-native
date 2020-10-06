@@ -6,24 +6,17 @@ import { createStackNavigator } from '@react-navigation/stack'
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
 
-//import api from './src/services/api'
-
 /* import screens */
-import Dashboard from './src/screens/dashboard';
+import Dashboard from './src/screens/Dashboard';
 import Art from './src/screens/drawers/art';
 import Science from './src/screens/drawers/science';
 import Technology from './src/screens/drawers/technology';
-
-/* and tabs */
-import TabArt from './src/screens/tabs/TabArt';
-import TabScience from './src/screens/tabs/TabScience';
-import TabTechs from './src/screens/tabs/TabTechs';
 
 export default class App extends Component {
   render() {
     createHomeStack = () =>
     <Stack.Navigator>
-      <Stack.Screen name="<-- Swipe" component={Dashboard} />
+      <Stack.Screen name="Swipe it up" component={Dashboard} />
     </Stack.Navigator>
 
     return (

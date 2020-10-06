@@ -10,5 +10,5 @@ export const Draw = styled.View`
 export const Title = styled.Text`
   color: hotpink;
   font-weight: bold;
-  font-size: 29;
+  font-size: 42px;
 `;
