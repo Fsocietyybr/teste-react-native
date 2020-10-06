@@ -1,5 +1,6 @@
+import 'react-native-gesture-handler';
 import React, { useEffect, useState } from 'react';
-
+import { NavigationContainer } from '@react-navigation/native';
 import { Main, Title, Content, News } from './styles/global';
 
 import api from './src/services/api'
@@ -46,7 +47,7 @@ export default function App() {
      }, []);
 
   return (
-    <>
+    <NavigationContainer>
       <Main>
         <Title>Technology</Title>
         <Content>
@@ -54,6 +55,6 @@ export default function App() {
         </Content>
         <Title>Science</Title>
       </Main>
-    </>
+    </NavigationContainer>
   );
 }
