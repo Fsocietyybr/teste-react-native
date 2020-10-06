@@ -2,9 +2,10 @@ import React from 'react';
 
 import { Main, Title } from '../../styles/global';
 
-TabTechs = () =>
-  <Main>
-    <Title>Tab Tec</Title>
-  </Main>
+const TabTechs = () => {
+  return (
+    <Title>Hello, I am your TabTechnology!</Title>
+  );
+}
 
 export default TabTechs;

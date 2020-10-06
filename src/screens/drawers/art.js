@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 
-import { Main, Title } from '../../styles/global';
+import { Draw , Title } from './styled-drawers';
 
-Art = () =>
-  <Main>
-    <Title>Art</Title>
-  </Main>
+const Art = () => {
+  return (
+    <Draw>
+      <Title>Hello, I am your art!</Title>
+    </Draw>
+  );
+}
 
 export default Art;
