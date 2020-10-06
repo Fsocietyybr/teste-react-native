@@ -7,9 +7,19 @@ O projeto deverá ser publicado em um repositório público no github.
 * **Obrigatório:**:
 
   * Consumir a api do NEW YORK TIMES.
+  [x] ok
+
   * Obter as notícias sobre as categorias 'technology' e 'science'.
+  [x]
+
+
   * Ao clicar na notícia deve exibir um modal contendo título, url e uma breve descrição da notícia.
-  * A criação visual da aplicação é livre. Sugestão: Pode se usar 2 abas, uma para cada categoria, e ao clicar em uma das notícias navegar ou abrir em uma nova janela).
+
+
+  * A criação visual da aplicação é livre. Sugestão: Pode se usar 2 abas, uma para cada categoria, e ao
+
+
+  clicar em uma das notícias navegar ou abrir em uma nova janela).
   * Deve conter um README contendo instruções para executar o projeto e uma breve descrição das escolhas feitas dentro do projeto.
   * Será levado em consideração a clareza do código e boas práticas.
 

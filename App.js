@@ -5,28 +5,52 @@ import { Main, Title, Content, News } from './styles/global';
 import api from './src/services/api'
 
 export default function App() {
+  // use state recording journal data
   const [articles, setArticle] = useState([]);
+  const [sciences, setScience] = useState([]);
+  const [technologies, setTechnologies] = useState([]);
 
-  // Load dos dados da api
+  // use effect loading hooks api responses
   useEffect(() => {
-    async function loadArticles() {
-      const response = await api.get('/arts.json');
+    const loadNews = async () => {
+        try {
+            const response = await api.get('science.json');
 
-      const { results: news } = response.data;
+            const { results } = response.data;
+           console.log(results);
+           setScience(results);
+          } catch (err) {
+            // Handle Error Here
+            console.error(err);
+         }
+         };
 
-      console.log(news);
-      setArticle(news);
-    }
+        loadNews();
+     }, []);
 
-    loadArticles();
-  }, []);
+  useEffect(() => {
+    const loadNews = async () => {
+        try {
+            const response = await api.get('arts.json');
+
+            const { results } = response.data;
+           console.log(results);
+           setTechnologies(results);
+          } catch (err) {
+            // Handle Error Here
+            console.error(err);
+         }
+         };
+
+        loadNews();
+     }, []);
 
   return (
     <>
       <Main>
         <Title>Technology</Title>
         <Content>
-          {articles.map(article => <News key={article.url}>{article.title}</News> )}
+          {technologies.map(technology => <News key={technology.url}>{technology.title}</News> )}
         </Content>
         <Title>Science</Title>
       </Main>
