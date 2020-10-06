@@ -11,6 +11,7 @@ export const Title = styled.Text`
   color: hotpink;
   font-size: 42px;
   font-weight: bold;
+  padding-bottom: 50px;
 `;
 
 export const Content = styled.View`
